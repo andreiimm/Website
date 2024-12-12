@@ -116,11 +116,12 @@ body {
 /* Video Container */
 .video-container {
   flex: 1;
-  max-width: 70%;
+  max-width: 85%; /* Increased max-width to make the container larger */
 }
 
+/* Video Element */
 .video-container video {
-  width: 100%;
+  width: 100%; /* Stretches the video to fill the container */
   border-radius: 10px;
   border: 3px solid #a67c52; /* Rich chocolate-colored border */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
