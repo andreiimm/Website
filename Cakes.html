@@ -147,14 +147,23 @@
   
     <!-- Script for highlighting the active navigation link -->
     <script>
-        const navLinks = document.querySelectorAll('.nav-link');
-        const currentPage = window.location.pathname;
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('active'); // Add active class to the current page link
-            }
-        });
-    </script>
+  // Get the current page file name (without the slash)
+  const currentPage = window.location.pathname.split('/').pop();
+  
+  // Get all the links in the navigation
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  // Loop through all links
+  navLinks.forEach(link => {
+    // If the link href matches the current page, add the 'active' class
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+</script>
+
    
     <!-- Bootstrap JS for responsive functionality -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
