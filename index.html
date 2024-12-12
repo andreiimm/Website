@@ -112,18 +112,22 @@
         <p class="text-center text-body-secondary">© 2024 Ben's Cakes, Inc</p>
       </div>
     </footer>
+    
+<script>
+  // Highlight active nav link based on current page
+  const navLinks = document.querySelectorAll('.nav-link');
+  const currentPage = window.location.pathname;
 
-    <!-- Bootstrap JS for functionality -->
-    <script>
-      // Highlight active nav link based on current page
-      const navLinks = document.querySelectorAll('.nav-link');
-      const currentPage = window.location.pathname;
-      navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-          link.classList.add('active');
-        }
-      });
-    </script>
+  navLinks.forEach(link => {
+    // Check if the link's href matches the current page
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active'); // Remove 'active' class from non-matching links
+    }
+  });
+</script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-Yvp..." crossorigin="anonymous"></script>
 </body>
 </html>
