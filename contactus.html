@@ -128,16 +128,25 @@
         <!-- Footer copyright notice -->
         <p class="text-center text-body-secondary">© 2024 Ben's Cakes, Inc</p>
       </footer>
-
-  <!-- JavaScript to highlight active link in navbar -->
-  <script>
-      const navLinks = document.querySelectorAll('.nav-link');
-      const currentPage = window.location.pathname;
-      navLinks.forEach(link => {
-          if (link.getAttribute('href') === currentPage) {
-              link.classList.add('active');
-          }
-      });
-  </script>
+    
+ <!-- Script for highlighting the active navigation link -->   
+<script>
+  // Get the current page file name (without the slash)
+  const currentPage = window.location.pathname.split('/').pop();
+  
+  // Get all the links in the navigation
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  // Loop through all links
+  navLinks.forEach(link => {
+    // If the link href matches the current page, add the 'active' class
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+</script>
+    
 </body>
 </html>
