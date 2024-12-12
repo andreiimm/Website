@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive layout -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ben's Cakes Tutorials</title>
+
+    <!-- Linking the external CSS for styling -->
+    <link rel="stylesheet" href="contactus.css">
+
+    <!-- Linking Bootstrap CSS for layout and components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Linking Google Fonts for Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon for the webpage -->
+    <link rel="icon" href="/assets/images/Ben totrt.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header Section with logo and navigation bar -->
+    <header class="d-flex flex-column align-items-center py-3 mb-4 border-bottom">
+        <!-- Logo linking back to homepage -->
+        <a href="" class="d-flex align-items-center mb-3 mb-md-0 text-decoration-none">
+            <img class="img1" src="/assets/images/Ben totrt.jpg" alt="Ben's Cakes"> <!-- Logo image -->
+        </a>
+
+        <!-- Navigation bar using Bootstrap classes for responsive pills -->
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/Cakes.html" class="nav-link">Cakes</a></li>
+            <li class="nav-item"><a href="/tutorial.html" class="nav-link">Tutorials</a></li>
+            <li class="nav-item"><a href="/contactus.html" class="nav-link">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <!-- Main content area for contact page -->
+    <div class="contact-page">
+        <!-- Contact Information section -->
+        <div class="contact-info">
+          <h2 class="contact-heading">Get in Touch</h2>
+          <p class="contact-text">
+            We’re here to help you create the cake of your dreams! Contact us for inquiries, custom orders, or just to say hello.
+          </p>
+          <p class="contact-details">
+            📍 Visit us: London Eye, London, UK<br>
+            📞 Call us: +44 123 456 789<br>
+            ✉️ Email us: ben.cakes@example.com
+          </p>
+        </div>
+
+        <!-- Contact Form for inquiries -->
+        <div class="contact-form">
+          <h3>Contact Us for a Quotation</h3>
+          <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <!-- Embedding a Google map for location -->
+            <label for="location">Find Us:</label>
+            <iframe
+              id="location"
+              src="https://www.google.com/maps?q=London+Eye&output=embed"
+              style="width: 100%; height: 300px; border: none;"
+              loading="lazy"
+            ></iframe>
+
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+        </div>
+
+        <!-- Order Section where users can place cake orders -->
+        <div class="order-section">
+          <h3>Order Your Favorite Cake</h3>
+          <form action="#" method="post">
+            <label for="cake-selection">Select a Cake:</label>
+            <select id="cake-selection" name="cake-selection">
+              <option value="chocolate">Chocolate Bliss</option>
+              <option value="vanilla">Vanilla Dream</option>
+              <option value="red-velvet">Red Velvet Indulgence</option>
+              <option value="carrot">Carrot Heaven</option>
+              <option value="lemon">Black Forest</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required>
+            <BR> <BR>
+            <button type="submit" class="order-button">Place Order</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-content">
+          <!-- Footer navigation links -->
+          <nav class="footer-links">
+            <a href="/HomePage.html">Home</a>
+            <a href="/Cakes.html">Cakes</a>
+            <a href="/tutorial.html">Tutorials</a>
+            <a href="/contactus.html">Contact Us</a>
+          </nav>
+
+          <!-- Social media prompt -->
+          <p class="socials">Follow us!</p>
+
+          <!-- Social media icons with links -->
+          <div class="d-flex justify-content-end">
+            <a href="https://en-gb.facebook.com/" class="social-icon mx-2">
+                <img src="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yD/r/5D8s-GsHJlJ.png" alt="Facebook" width="24" height="24">
+            </a>
+            <a href="https://x.com" class="social-icon mx-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/X_logo.jpg/1024px-X_logo.jpg" alt="Twitter" width="20px" height="20px">
+            </a>
+            <a href="https://www.instagram.com" class="social-icon mx-2">
+                <img src="/assets/images/insta.webp" alt="Instagram" width="40px" height="auto">
+            </a>
+        </div>
+        
+        <!-- Footer copyright notice -->
+        <p class="text-center text-body-secondary">© 2024 Ben's Cakes, Inc</p>
+      </footer>
+
+  <!-- JavaScript to highlight active link in navbar -->
+  <script>
+      const navLinks = document.querySelectorAll('.nav-link');
+      const currentPage = window.location.pathname;
+      navLinks.forEach(link => {
+          if (link.getAttribute('href') === currentPage) {
+              link.classList.add('active');
+          }
+      });
+  </script>
+</body>
+</html>

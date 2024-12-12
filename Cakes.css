@@ -1,0 +1,326 @@
+/* General body styling */
+body {
+    
+    background: linear-gradient(135deg, #f8d9e8, #f8e2d2); /* Pastel pink and peach */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Neutral text color */
+  }
+  
+  /* Logo styling */
+  .img1 {
+    width: 200px; /* Adjusted for a smaller, proportional logo */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Navbar styling */
+  header {
+    background-color: #f57689; /* Header background color */
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: larger;
+  }
+  
+  .nav-link {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  header .nav-link {
+    color: rgb(0, 0, 0); /* Default link color */
+  }
+  
+  header .nav-link:hover {
+    color: black; /* Hover state color */
+  }
+  
+  .nav-pills .nav-link:hover,
+  .nav-pills .nav-link.active {
+    color: #000000 !important;
+    background-color: rgb(255, 210, 240) !important; /* Light pink background */
+    border-color: #ff007f !important; /* Highlight border */
+    font-size: larger;
+  }
+  
+  header .nav-link.active {
+    color: white; /* Text color for active state */
+    background-color: #ff91a4; /* Soft pastel pink highlight */
+    padding: 10px 15px; /* Add padding for better appearance */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Highlight the text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth effect */
+  }
+  /* Showcase Section */
+.showcase-section {
+  padding: 30px 20px;
+  background-color: #f7f7f7; /* Light grey for a soft contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.showcase-content {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  align-items: center;
+}
+
+/* Showcase Section */
+.showcase-section {
+  padding: 30px 20px;
+  background-color: #c1935ed8; /* Light beige/chocolate-inspired background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d8bca8; /* Soft brown border */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+.showcase-content {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  align-items: center;
+}
+.tryit{
+  text-decoration: none;
+  background: #e64a81; /* Soft pink */
+  color: white; /* White text */
+  border: none;
+  border-radius: 50px; /* Fully rounded */
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 18px; /* Readable size */
+  font-weight: bold;
+  width: 100%; /* Full width inside the card */
+  max-width: 200px; /* Limit button width */
+  align-self: center; /* Center the button horizontally */
+  margin: auto 0 15px 0; /* Center and provide spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease;
+}
+
+/* Video Container */
+.video-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #a67c52; /* Rich chocolate-colored border */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Container */
+.text-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff5ec; /* Soft cream background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-container h2 {
+  font-size: 1.8rem;
+  color: #6b4226; /* Chocolate brown */
+  margin-bottom: 10px;
+  font-family: 'Cursive', sans-serif; /* Adds a playful touch */
+}
+
+.text-container p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  line-height: 1.6;
+  color: #6f4b28; /* Deep brown for readability */
+  margin-bottom: 10px;
+}
+
+.container {
+  font-family: 'Times New Roman', Times, serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.cakes {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.cake {
+  background: rgb(255, 255, 255); /* White background */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  text-align: center;
+  width: 300px; /* Fixed width */
+  margin: 25px auto; /* Center-align cards */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Evenly space elements */
+  padding: 20px; /* Uniform padding */
+  height: 500px; /* Consistent height */
+}
+
+.cake img {
+  width: 100%; /* Fit the card's width */
+  height: 200px; /* Fixed height for consistent layout */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 20px 20px 0 0; /* Rounded top corners */
+}
+
+.cake h3 {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.cake p {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 21px;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  margin: 10px 0;
+}
+
+button {
+  background: #e64a81; /* Soft pink */
+  color: white; /* White text */
+  border: none;
+  border-radius: 50px; /* Fully rounded */
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 18px; /* Readable size */
+  font-weight: bold;
+  width: 100%; /* Full width inside the card */
+  max-width: 200px; /* Limit button width */
+  align-self: center; /* Center the button horizontally */
+  margin: auto 0 15px 0; /* Center and provide spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #d752d0; /* Lighter pink on hover */
+  transform: scale(1.1); /* Slight zoom */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+
+.cake {
+  background: rgb(255, 255, 255); /* White background for contrast */
+  border-radius: 20px; /* Rounded corners for a smooth look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  text-align: center;
+  width: 300px; /* Slightly wider cards */
+  margin: 25px auto; /* Center align */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px; /* Uniform padding */
+  height: 500px; /* Increased height for proportional layout */
+}
+
+
+/* Footer Styling */
+.footer {
+  background-color: #f8d9e8; /* Soft pastel pink */
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 2px solid #ff007f; /* Decorative border */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #771603; /* Deep brown-red color */
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff007f; /* Highlight color */
+  text-decoration: underline;
+}
+
+.social-media h3 {
+  font-size: 1.5rem;
+  color: #771603;
+  margin-bottom: 10px;
+}
+.social-icon img {
+  width: 40px; /* Increased size */
+  height: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%; /* Rounded icons */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+/* Hover Animation */
+.social-icon img:hover {
+  transform: scale(1.2); /* Slightly larger on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Optional: Change Icon Colors on Hover */
+.social-icon:hover img {
+  filter: brightness(1.1); /* Slight brightness boost */
+}
+
+/* Optional: Add Padding Around Icons */
+.social-icon {
+  padding: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-media {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,236 @@
+/* Navbar Styling */
+header {
+  background-color: #f57689; /* Header background color */
+  text-align: center; /* Center align the text */
+  padding: 20px 0; /* Add vertical padding to header */
+}
+
+header .nav {
+  display: flex; /* Use flexbox layout for navigation links */
+  justify-content: center; /* Center the navigation links horizontally */
+  align-items: center; /* Align the links vertically */
+  gap: 20px; /* Space between each navigation link */
+  flex-wrap: wrap; /* Allow the links to wrap if necessary */
+  font-size: larger; /* Increase font size for readability */
+}
+
+.nav-link {
+  font-family: 'Times New Roman', Times, serif; /* Apply serif font to navigation links */
+}
+
+header .nav-link {
+  color: rgb(0, 0, 0); /* Default color for navigation links (black) */
+}
+
+header .nav-link:hover {
+  color: black; /* Hover state color */
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link.active {
+  color: #000000 !important; /* Ensure text color stays black on hover/active */
+  background-color: rgb(255, 210, 240) !important; /* Light pink background when active/hovered */
+  border-color: #ff007f !important; /* Highlight the border with pink */
+  font-size: larger; /* Larger text size when active */
+}
+
+header .nav-link.active {
+  color: white; /* Active link text color (white) */
+  background-color: #ff91a4; /* Soft pastel pink for active link background */
+  padding: 10px 15px; /* Add padding around active links for better appearance */
+  border-radius: 20px; /* Rounded corners for active link */
+  font-weight: bold; /* Make the active text bold */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Logo Styling */
+.img1 {
+  width: 200px; /* Logo width, adjusted to be smaller */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Block-level element */
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+/* Contact Page Styling */
+.contact-page {
+  background: linear-gradient(135deg, #fff7f0, #ffe6e1); /* Soft gradient background for the contact page */
+  padding: 40px; /* Padding around the contact section */
+  border-radius: 20px; /* Rounded corners for the section */
+  max-width: 900px; /* Limit the maximum width */
+  margin: 30px auto; /* Center the section with some margin */
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle box shadow for a floating effect */
+}
+
+.contact-info {
+  text-align: center; /* Center-align the contact info text */
+  margin-bottom: 30px; /* Space below the contact info */
+}
+
+.contact-heading {
+  font-size: 2rem; /* Large font size for the heading */
+  color: #ff5c8d; /* Pink color for the heading */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.contact-text {
+  font-size: 1rem; /* Regular font size for text */
+  color: #333; /* Dark text color for readability */
+  margin-bottom: 10px; /* Space below the contact text */
+}
+
+.contact-details {
+  font-size: 1rem; /* Same font size as text */
+  color: #555; /* Slightly lighter color for contact details */
+  line-height: 1.5; /* Adjust line height for better spacing */
+}
+
+.contact-form,
+.order-section {
+  margin-top: 20px; /* Space above form/section */
+  padding: 20px; /* Padding inside the form */
+  background: #ffebf2; /* Light pink background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.contact-form h3,
+.order-section h3 {
+  font-size: 1.5rem; /* Large heading font size */
+  color: #ff5c8d; /* Pink color for form headings */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+label {
+  display: block; /* Block-level label */
+  margin-bottom: 5px; /* Space below the label */
+  font-weight: bold; /* Bold font for labels */
+}
+
+input,
+textarea,
+select {
+  width: 100%; /* Full width for form inputs */
+  padding: 10px; /* Padding inside the inputs */
+  margin-bottom: 15px; /* Space below inputs */
+  border: 2px solid #ffb3c7; /* Light pink border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1rem; /* Regular font size */
+  background-color: #fff; /* White background for inputs */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ff5c8d; /* Border turns pink on focus */
+  outline: none; /* Remove default outline */
+}
+
+.submit-button,
+.order-button {
+  background-color: #ff5c8d; /* Pink background for buttons */
+  color: white; /* White text on buttons */
+  border: none; /* Remove default button border */
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  font-weight: bold; /* Bold text on buttons */
+  font-size: 1rem; /* Regular font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+}
+
+.submit-button:hover,
+.order-button:hover {
+  background-color: #ff91a4; /* Lighter pink on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f8d9e8; /* Soft pastel pink background for footer */
+  padding: 30px 20px; /* Padding around the footer */
+  text-align: center; /* Center-align footer content */
+  border-top: 2px solid #ff007f; /* Decorative pink border at the top */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
+}
+
+.footer-content {
+  display: flex; /* Flexbox layout for footer content */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  gap: 20px; /* Space between footer items */
+}
+
+.footer-links {
+  display: flex; /* Flexbox layout for footer links */
+  justify-content: center; /* Center the links horizontally */
+  gap: 15px; /* Space between links */
+  margin-bottom: 15px; /* Space below the links */
+}
+
+.footer-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: #771603; /* Deep brown-red color for links */
+  font-size: 1rem; /* Regular font size */
+  font-weight: bold; /* Bold font for links */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for color and decoration */
+}
+
+.footer-links a:hover {
+  color: #ff007f; /* Pink highlight color on hover */
+  text-decoration: underline; /* Underline links on hover */
+}
+
+.social-media {
+  display: flex; /* Flexbox layout for social media icons */
+  justify-content: center; /* Center the icons horizontally */
+  gap: 15px; /* Space between icons */
+}
+
+.social-icon {
+  text-decoration: none; /* Remove underline from icon links */
+  color: #771603; /* Deep brown-red color for icons */
+  font-size: 1.2rem; /* Slightly larger font size for icons */
+  font-weight: bold; /* Bold font for icons */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scaling */
+}
+
+.social-icon:hover {
+  color: #ff007f; /* Pink highlight color on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.social-media h3 {
+  font-size: 1.5rem; /* Larger font for social media heading */
+  color: #771603; /* Same deep brown-red color */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.social-icon img {
+  width: 40px; /* Larger size for social media icons */
+  height: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for icon scaling and shadow */
+  border-radius: 50%; /* Circular icons */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow for icons */
+}
+
+/* Hover Animation for Icons */
+.social-icon img:hover {
+  transform: scale(1.2); /* Slightly larger on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Optional: Change Icon Colors on Hover */
+.social-icon:hover img {
+  filter: brightness(1.1); /* Slight brightness boost on hover */
+}
+
+/* Optional: Add Padding Around Icons */
+.social-icon {
+  padding: 5px; /* Padding inside the social icon link */
+}
+
+.social-media {
+  flex-direction: column; /* Stack icons vertically on small screens */
+  align-items: center; /* Center-align icons vertically */
+}
