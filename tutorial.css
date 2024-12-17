@@ -86,7 +86,7 @@ header .nav-link.active {
 .image-placeholder {
   width: 32%; /* Slightly larger but still compact */
   height: auto;
-  margin-bottom: 50px; /* Moderate space between images */
+  margin-bottom: 40px; /* Moderate space between images */
   border-radius: 40px;
   padding: 5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
