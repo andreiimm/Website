@@ -19,8 +19,11 @@ header .nav {
 }
 
 header .nav-link {
-  color: rgb(0, 0, 0); /* Default color for navigation links (black) */
+  color: rgb(0, 0, 0); /* Default link color */
+  margin-right: 30px; /* Increased spacing */
+  padding: 10px 15px;
 }
+
 
 header .nav-link:hover {
   color: black; /* Hover state color */

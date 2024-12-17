@@ -37,7 +37,10 @@ body {
   
   header .nav-link {
     color: rgb(0, 0, 0); /* Default link color */
+    margin-right: 30px; /* Increased spacing */
+    padding: 10px 15px;
   }
+  
   
   header .nav-link:hover {
     color: black; /* Hover state color */
@@ -113,19 +116,13 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Video Container */
 .video-container {
   flex: 1;
-  max-width: 85%; /* Increased max-width to make the container larger */
+  width: 80%; /* Increased width */
+  max-width: 800px; /* Set a maximum width to prevent excessive scaling */
 }
 
-/* Video Element */
-.video-container video {
-  width: 100%; /* Stretches the video to fill the container */
-  border-radius: 10px;
-  border: 3px solid #a67c52; /* Rich chocolate-colored border */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
+
 
 /* Text Container */
 .text-container {
@@ -187,6 +184,12 @@ body {
   height: 200px; /* Fixed height for consistent layout */
   object-fit: cover; /* Maintain aspect ratio */
   border-radius: 20px 20px 0 0; /* Rounded top corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+}
+
+.cake img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cake h3 {

@@ -28,7 +28,10 @@ header .nav {
 
 header .nav-link {
   color: rgb(0, 0, 0); /* Default link color */
+  margin-right: 30px; /* Increased spacing */
+  padding: 10px 15px;
 }
+
 
 header .nav-link:hover {
   color: black; /* Hover state color */
@@ -70,22 +73,23 @@ header .nav-link.active {
   margin-bottom: 30px;
 }
 
-/* Image Row */
 .image-row {
   width: 100%;
-  display: auto;
-  gap: 20px;
+  display: flex;
+  gap: 34px; /* Increased gap for more whitespace */
   margin-top: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
+
 .image-placeholder {
-  width: 30%;
+  width: 32%; /* Slightly larger but still compact */
   height: auto;
-  border-radius: 8px;
+  margin-bottom: 50px; /* Moderate space between images */
+  border-radius: 40px;
   padding: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Reminder Section Styling */
