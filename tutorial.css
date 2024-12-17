@@ -76,7 +76,7 @@ header .nav-link.active {
 .image-row {
   width: 100%;
   display: flex;
-  gap: 34px; /* Increased gap for more whitespace */
+  gap: 30px; /* Increased gap for more whitespace */
   margin-top: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
